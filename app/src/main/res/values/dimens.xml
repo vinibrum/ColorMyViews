@@ -3,4 +3,5 @@
     <dimen name="box_text_size">24sp</dimen>
     <dimen name="box_two_width">130dp</dimen>
     <dimen name="box_two_height">130dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
 </resources>

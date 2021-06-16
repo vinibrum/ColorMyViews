@@ -2,4 +2,7 @@
     <string name="app_name">ColorMyViews</string>
     <string name="box_one_content">Box One</string>
     <string name="box_two_content">Box Two</string>
+    <string name="box_three_content">Box Three</string>
+    <string name="box_four_content">Box Four</string>
+    <string name="box_five_content">Box Five</string>
 </resources>
