@@ -8,65 +8,69 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/box_one_text"
+        android:id="@+id/box_0"
         style="@style/whiteBox"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
+        android:onClick="onClickTextView"
         android:text="@string/box_one_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/box_two_text"
+        android:id="@+id/box_1"
         style="@style/whiteBox"
         android:layout_width="@dimen/box_two_width"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/margin_small"
+        android:onClick="onClickTextView"
         android:text="@string/box_two_content"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/box_one_text"
-        app:layout_constraintTop_toBottomOf="@+id/box_one_text" />
+        app:layout_constraintStart_toStartOf="@+id/box_0"
+        app:layout_constraintTop_toBottomOf="@+id/box_0" />
 
     <TextView
-        android:id="@+id/box_three_text"
+        android:id="@+id/box_2"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/margin_small"
+        android:onClick="onClickTextView"
         android:text="@string/box_three_content"
-        app:layout_constraintBottom_toTopOf="@+id/box_four_text"
+        app:layout_constraintBottom_toTopOf="@+id/box_3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/box_two_text"
-        app:layout_constraintTop_toTopOf="@+id/box_two_text"
+        app:layout_constraintStart_toEndOf="@+id/box_1"
+        app:layout_constraintTop_toTopOf="@+id/box_1"
         app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
-        android:id="@+id/box_four_text"
+        android:id="@+id/box_3"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
         android:layout_marginBottom="@dimen/margin_small"
+        android:onClick="onClickTextView"
         android:text="@string/box_four_content"
-        app:layout_constraintBottom_toTopOf="@+id/box_five_text"
+        app:layout_constraintBottom_toTopOf="@+id/box_4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/box_two_text"
-        app:layout_constraintTop_toBottomOf="@+id/box_three_text" />
+        app:layout_constraintStart_toEndOf="@+id/box_1"
+        app:layout_constraintTop_toBottomOf="@+id/box_2" />
 
     <TextView
-        android:id="@+id/box_five_text"
+        android:id="@+id/box_4"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/margin_small"
+        android:onClick="onClickTextView"
         android:text="@string/box_five_content"
-        app:layout_constraintBottom_toBottomOf="@+id/box_two_text"
+        app:layout_constraintBottom_toBottomOf="@+id/box_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/box_two_text"
-        app:layout_constraintTop_toBottomOf="@+id/box_four_text" />
+        app:layout_constraintStart_toEndOf="@+id/box_1"
+        app:layout_constraintTop_toBottomOf="@+id/box_3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -76,36 +80,39 @@
         app:layout_constraintGuide_percent="0.3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/red_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/red_bttn_txt"
+        android:onClick="onClickButton"
         android:backgroundTint="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/yellow_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/yellow_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/yellow_bttn_txt"
+        android:onClick="onClickButton"
         android:backgroundTint="@color/yellow"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/green_button"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/red_button" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/green_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/green_bttn_txt"
+        android:onClick="onClickButton"
         android:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/yellow_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
