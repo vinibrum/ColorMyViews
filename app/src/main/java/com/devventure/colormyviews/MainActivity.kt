@@ -10,27 +10,18 @@ import android.graphics.Canvas
 import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
-import android.provider.MediaStore
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.drawToBitmap
-import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
-import java.io.IOException
 import android.text.format.DateFormat
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.Guideline
 import androidx.core.app.ActivityCompat
-import androidx.core.content.FileProvider
-import androidx.core.view.marginTop
 import java.lang.Exception
 import java.util.*
-import java.util.jar.Manifest
-import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
     private var changeColor = R.color.grey
