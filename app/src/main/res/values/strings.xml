@@ -8,4 +8,6 @@
     <string name="green_bttn_txt">GREEN</string>
     <string name="yellow_bttn_txt">YELLOW</string>
     <string name="red_bttn_txt">RED</string>
+    <string name="send_image_error">Não foi possível enviar o screenshot!</string>
+    <string name="share_message">Opções de compartilhamento:</string>
 </resources>
