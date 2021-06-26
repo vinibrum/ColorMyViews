@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        checkPermission(this)
+        checkPermission()
         loadPreferences()
     }
 
@@ -55,12 +55,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun checkPermission(activity: Activity) {
-        var permission = ActivityCompat.checkSelfPermission(activity, android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+    private fun checkPermission() {
+        var permission = ActivityCompat.checkSelfPermission(this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
 
         if(permission != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(
-                activity,
+                this,
                 arrayOf(
                     android.Manifest.permission.READ_EXTERNAL_STORAGE,
                     android.Manifest.permission.WRITE_EXTERNAL_STORAGE
